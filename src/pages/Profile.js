@@ -9,7 +9,7 @@ const Profile = (props) => {
     const user  = useSelector(selectUser);
     useEffect(() => {
         dispatch(showUser(user_id));
-    },[]);
+    },[user_id]);
 
     return (
         <div>
